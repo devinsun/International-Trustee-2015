@@ -1,0 +1,141 @@
+body, html {
+	width: 100%;
+	font-family: 'Lato';
+	font-weight: 300;
+}
+
+/* OVERALL */
+
+.content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.nav li, .nav a {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	font-size: 100%;
+	font-weight: 400;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+.nav a, .nav a:hover, .contact i.fa.:hover, .contact i.fa {
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.nav a:hover {
+	color: #dddad2;
+}
+
+/* HOME PAGE */
+
+body.home {
+	background: url('../img/beach.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	margin: 0;
+}
+
+.home .candidate {
+	font-size: 80%;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.home .title {
+	font-size: 600%;
+	margin: auto;
+	letter-spacing: 2px;
+}
+
+.home .subtitle {
+	font-size: 150%;
+	width: 600px;
+}
+
+.home .overlay {
+	width: 200%; height: 200%;
+	background-color: #e1d8bd;
+	position: fixed; margin: -100px;
+	opacity: 0.4;
+}
+
+/* ABOUT, PLATFORM, AND CONTACT PAGES */
+
+body.about, body.platform, body.contact {
+	background-color: white;
+	color: black;
+	margin: 0;
+}
+
+.about .header {
+	background: url('../img/dew.jpg');
+}
+
+.platform .header {
+	background: url('../img/sunset.jpg');
+}
+
+.contact .header {
+	background: url('../img/beach.jpg');
+}
+
+
+.about .header, .platform .header, .contact .header {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	height: 250px;
+	padding: 10px 70px;
+}
+
+.about .title, .platform .title, .contact .title {
+	color: white;
+	font-size: 220%;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: bold;
+	top: 10px;
+	left: 10px;
+	float: left;
+}
+
+.header .nav {
+	width: auto;
+	float: right;
+	right: 15px;
+}
+
+.about .container, .platform .container, .contact .container {
+	padding: 5% 15%;
+}
+
+.platform ul {
+	list-style-type: circle;
+}
+
+.contact i.fa {
+	color: black;
+	font-size: 300%;
+	padding: 5px;
+}
+
