@@ -58,7 +58,6 @@ body.home {
 	letter-spacing: 5px;
 	text-transform: uppercase;
 	text-align: center;
-	margin-top: 50px;
 }
 
 .home .title {
@@ -70,6 +69,20 @@ body.home {
 .home .subtitle {
 	font-size: 150%;
 	width: 600px;
+
+}
+
+.home .content {
+	top: 75%;
+}
+
+.home .content img {
+	width: 300px;
+	z-index: -1;
+	position: absolute;
+	bottom: 330px;
+	left: 150px;
+	border-bottom: 1px solid white;
 }
 
 .home .overlay {
@@ -77,6 +90,14 @@ body.home {
 	background-color: #e1d8bd;
 	position: fixed; margin: -100px;
 	opacity: 0.4;
+}
+
+.home .line {
+	width: 300px;
+	margin: auto;
+	position: relative;
+	top: 10px;
+	border-bottom: 1px solid white;
 }
 
 /* ABOUT, PLATFORM, AND CONTACT PAGES */
