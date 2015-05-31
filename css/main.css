@@ -103,28 +103,15 @@ body.home {
 	border-bottom: 1px solid white;
 }
 
-/* ABOUT, PLATFORM, AND CONTACT PAGES */
+/* ABOUT, PLATFORM, QUALIFICATIONS, AND CONTACT PAGES */
 
-body.about, body.platform, body.contact {
+body.about, body.platform, body.contact, body.qualifications {
 	background-color: white;
 	color: black;
 	margin: 0;
 }
 
-.about .header {
-	background: url('../img/dew.jpg');
-}
-
-.platform .header {
-	background: url('../img/sunset.jpg');
-}
-
-.contact .header {
-	background: url('../img/beach.jpg');
-}
-
-
-.about .header, .platform .header, .contact .header {
+.header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
@@ -132,7 +119,23 @@ body.about, body.platform, body.contact {
 	padding: 10px 70px;
 }
 
-.about .title, .platform .title, .contact .title {
+.about .header {
+	background-image: url('../img/dew.jpg');
+}
+
+.platform .header {
+	background-image: url('../img/sunset.jpg');
+}
+
+.qualifications .header {
+	background-image: url('../img/dark-sunset.jpg');
+}
+
+.contact .header {
+	background-image: url('../img/beach.jpg');
+}
+
+.about .title, .platform .title, .contact .title, .qualifications .title {
 	color: white;
 	font-size: 220%;
 	letter-spacing: 2px;
@@ -149,11 +152,11 @@ body.about, body.platform, body.contact {
 	right: 15px;
 }
 
-.about .container, .platform .container, .contact .container {
+.about .container, .platform .container, .contact .container, .qualifications .container {
 	padding: 5% 15%;
 }
 
-.platform ul {
+.platform ul, .qualifications ul {
 	list-style-type: circle;
 }
 
