@@ -62,15 +62,16 @@ body.home {
 }
 
 .home .title {
-	font-size: 600%;
+	font-size: 400%;
 	margin: auto;
 	letter-spacing: 2px;
 }
 
 .home .subtitle {
-	font-size: 150%;
-	width: 600px;
-
+	font-size: 100%;
+	width: 400px;
+	margin: auto;
+	margin-top: 20px;
 }
 
 .home .content {
@@ -98,7 +99,7 @@ body.home {
 	width: 200px;
 	margin: auto;
 	position: relative;
-	top: 10px;
+	top: 5px;
 	border-bottom: 1px solid white;
 }
 
