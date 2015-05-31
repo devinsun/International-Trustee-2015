@@ -73,15 +73,16 @@ body.home {
 }
 
 .home .content {
-	top: 75%;
+	top: 50%;
 }
 
 .home .content img {
-	width: 300px;
+	width: 250px;
 	z-index: -1;
-	position: absolute;
-	bottom: 330px;
-	left: 150px;
+	left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
 	border-bottom: 1px solid white;
 }
 
@@ -93,7 +94,7 @@ body.home {
 }
 
 .home .line {
-	width: 300px;
+	width: 250px;
 	margin: auto;
 	position: relative;
 	top: 10px;
