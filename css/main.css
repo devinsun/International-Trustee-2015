@@ -78,7 +78,7 @@ body.home {
 }
 
 .home .content img {
-	width: 250px;
+	width: 200px;
 	z-index: -1;
 	left:0;
     right:0;
@@ -95,7 +95,7 @@ body.home {
 }
 
 .home .line {
-	width: 250px;
+	width: 200px;
 	margin: auto;
 	position: relative;
 	top: 10px;
