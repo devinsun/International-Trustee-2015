@@ -1,27 +1,36 @@
 body, html {
 	width: 100%;
-	font-family: 'Lato';
-	font-weight: 300;
+    font: 300 18px/1.6875 'Lato';
 }
 
 /* OVERALL */
 
 .content {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: auto;
 }
 
 ul {
 	list-style-type: none;
 	padding-left: 0;
+}
+
+.nav {
+    text-align: center;
+}
+
+.header .nav {
+    list-style: none;
+    width: auto;
+    float: right;
+    right: 15px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
 }
 
 .nav li, .nav a {
@@ -65,34 +74,41 @@ body.home {
 	font-size: 400%;
 	margin: auto;
 	letter-spacing: 2px;
+    text-align: center;
 }
 
 .home .subtitle {
 	font-size: 100%;
-	width: 400px;
-	margin: auto;
-	margin-top: 20px;
+	max-width: 400px;
+	margin: 20px auto 0 auto;
+    text-align: center;
 }
 
 .home .content {
-	top: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
 }
 
 .home .content img {
 	width: 200px;
-	z-index: -1;
-	left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
+    display: block;
+    margin: 0 auto;
 	border-bottom: 1px solid white;
 }
 
 .home .overlay {
-	width: 200%; height: 200%;
-	background-color: #e1d8bd;
-	position: fixed; margin: -100px;
-	opacity: 0.4;
+	width: 100%;
+    height: 100%;
+    background-color: #e1d8bd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
 }
 
 .home .line {
@@ -146,12 +162,6 @@ body.about, body.platform, body.contact, body.qualifications {
 	float: left;
 }
 
-.header .nav {
-	width: auto;
-	float: right;
-	right: 15px;
-}
-
 .about .container, .platform .container, .contact .container, .qualifications .container {
 	padding: 5% 15%;
 }
@@ -166,3 +176,26 @@ body.about, body.platform, body.contact, body.qualifications {
 	padding: 5px;
 }
 
+@media all and (max-width: 900px) {
+    .nav li, .nav a {
+        font-size: 95%;
+        display: block;
+        padding: 5px;
+    }
+
+    .header .title {
+        float: none;
+        text-align: center;
+        left: 0;
+        top: 0;
+    }
+
+    .header .nav {
+        float: none;
+        right: 0;
+    }
+
+    .header {
+        height: auto;
+    }
+}
